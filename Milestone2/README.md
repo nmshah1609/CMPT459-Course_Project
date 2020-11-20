@@ -12,7 +12,7 @@ ppscore,
 sklearn, 
 xgboost
 
-## To install any libraries:
+## To install any library:
 pip instal NAMEOFLIBRARY
 
 
