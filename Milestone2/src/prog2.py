@@ -67,9 +67,16 @@ model = XGBClassifier(learning_rate=0.001,
        max_delta_step=0, max_depth=3, min_child_weight=1, missing=None,
        n_estimators=10, n_jobs=-1)
 model.fit(X_train, y_train)
-model_pkl = open(os.path.join('models','xgb10_classifier.pkl'), 'wb')
-pickle.dump(model, model_pkl)
-model = pickle.load(open(os.path.join('models','xgb10_classifier.pkl'), 'rb'))
+# model_pkl = open(os.path.join('models','xgb10_classifier.pkl'), 'wb')
+# pickle.dump(model, model_pkl)
+# model = pickle.load(open(os.path.join('models','xgb10_classifier.pkl'), 'rb'))
+with open(os.path.join('models','xgb10_classifier.pkl'), 'wb') as f:
+       pickle.dump(model, f)
+
+with open(os.path.join('models','xgb10_classifier.pkl'), 'rb') as f:
+       model = pickle.load(f)
+       
+
 predictions_train = model.predict(X_train)
 print("Accuracy Train {0:.2f}%".format(100*accuracy_score(predictions_train, y_train)))
 print(classification_report(y_train, predictions_train))
@@ -85,9 +92,15 @@ model = XGBClassifier(learning_rate=0.001,
        max_delta_step=0, max_depth=3, min_child_weight=1, missing=None,
        n_estimators=20, n_jobs=-1)
 model.fit(X_train, y_train)
-model_pkl = open(os.path.join('models','xgb20_classifier.pkl'), 'wb')
-pickle.dump(model, model_pkl)
-model = pickle.load(open(os.path.join('models','xgb20_classifier.pkl'), 'rb'))
+# model_pkl = open(os.path.join('models','xgb20_classifier.pkl'), 'wb')
+# pickle.dump(model, model_pkl)
+# model = pickle.load(open(os.path.join('models','xgb20_classifier.pkl'), 'rb'))
+with open(os.path.join('models','xgb20_classifier.pkl'), 'wb') as f:
+       pickle.dump(model, f)
+
+with open(os.path.join('models','xgb20_classifier.pkl'), 'rb') as f:
+       model = pickle.load(f)
+
 predictions_train = model.predict(X_train)
 print("Accuracy Train {0:.2f}%".format(100*accuracy_score(predictions_train, y_train)))
 print(classification_report(y_train, predictions_train))
@@ -103,9 +116,13 @@ model = XGBClassifier(learning_rate=0.001,
        max_delta_step=0, max_depth=3, min_child_weight=1, missing=None,
        n_estimators=100, n_jobs=-1)
 model.fit(X_train, y_train)
-model_pkl = open(os.path.join('models','xgb100_classifier.pkl'), 'wb')
-pickle.dump(model, model_pkl)
-model = pickle.load(open(os.path.join('models','xgb100_classifier.pkl'), 'rb'))
+# model_pkl = open(os.path.join('models','xgb100_classifier.pkl'), 'wb')
+with open(os.path.join('models','xgb100_classifier.pkl'), 'wb') as f:
+       pickle.dump(model, f)
+
+with open(os.path.join('models','xgb100_classifier.pkl'), 'rb') as f:
+       model = pickle.load(f)
+# model = pickle.load(open)
 predictions_train = model.predict(X_train)
 print("Accuracy Train {0:.2f}%".format(100*accuracy_score(predictions_train, y_train)))
 print(classification_report(y_train, predictions_train))
@@ -122,9 +139,15 @@ model = XGBClassifier(learning_rate=0.001,
        max_delta_step=0, max_depth=5, min_child_weight=1, missing=None,
        n_estimators=20, n_jobs=-1)
 model.fit(X_train, y_train)
-model_pkl = open(os.path.join('models','xgb5_classifier.pkl'), 'wb')
-pickle.dump(model, model_pkl)
-model = pickle.load(open(os.path.join('models','xgb5_classifier.pkl'), 'rb'))
+# model_pkl = open(os.path.join('models','xgb5_classifier.pkl'), 'wb')
+# pickle.dump(model, model_pkl)
+# model = pickle.load(open(os.path.join('models','xgb5_classifier.pkl'), 'rb'))
+with open(os.path.join('models','xgb5_classifier.pkl'), 'wb') as f:
+       pickle.dump(model, f)
+
+with open(os.path.join('models','xgb5_classifier.pkl'), 'rb') as f:
+       model = pickle.load(f)
+
 predictions_train = model.predict(X_train)
 print("Accuracy Train {0:.2f}%".format(100*accuracy_score(predictions_train, y_train)))
 print(classification_report(y_train, predictions_train))
@@ -139,9 +162,15 @@ print(classification_report(y_test, predictions))
 print('\t############Random Forest: n_estimators = 10\t############')
 model = RandomForestClassifier(n_estimators=10, random_state=0)
 model.fit(X_train, y_train)
-model_pkl = open(os.path.join('models','randomforest10_classifier.pkl'), 'wb')
-pickle.dump(model, model_pkl)
-model = pickle.load(open(os.path.join('models','randomforest10_classifier.pkl'), 'rb'))
+# model_pkl = open(os.path.join('models','randomforest10_classifier.pkl'), 'wb')
+# pickle.dump(model, model_pkl)
+# model = pickle.load(open(os.path.join('models','randomforest10_classifier.pkl'), 'rb'))
+with open(os.path.join('models','randomforest10_classifier.pkl'), 'wb') as f:
+       pickle.dump(model, f)
+
+with open(os.path.join('models','randomforest10_classifier.pkl'), 'rb') as f:
+       model = pickle.load(f)
+
 predictions_train = model.predict(X_train)
 print("Accuracy Train {0:.2f}%".format(100*accuracy_score(predictions_train, y_train)))
 print(classification_report(y_train, predictions_train))
@@ -155,9 +184,15 @@ print(classification_report(y_test, predictions))
 print('\t############Random Forest: n_estimators = 20\t############')
 model = RandomForestClassifier(n_estimators=20, random_state=0)
 model.fit(X_train, y_train)
-model_pkl = open(os.path.join('models','randomforest20_classifier.pkl'), 'wb')
-pickle.dump(model, model_pkl)
-model = pickle.load(open(os.path.join('models','randomforest20_classifier.pkl'), 'rb'))
+# model_pkl = open(os.path.join('models','randomforest20_classifier.pkl'), 'wb')
+# pickle.dump(model, model_pkl)
+# model = pickle.load(open(os.path.join('models','randomforest20_classifier.pkl'), 'rb'))
+with open(os.path.join('models','randomforest20_classifier.pkl'), 'wb') as f:
+       pickle.dump(model, f)
+
+with open(os.path.join('models','randomforest20_classifier.pkl'), 'rb') as f:
+       model = pickle.load(f)
+
 predictions_train = model.predict(X_train)
 print("Accuracy Train {0:.2f}%".format(100*accuracy_score(predictions_train, y_train)))
 print(classification_report(y_train, predictions_train))
@@ -171,9 +206,15 @@ print(classification_report(y_test, predictions))
 print('\t############Random Forest: n_estimators = 100\t############')
 model = RandomForestClassifier(n_estimators=100, random_state=0)
 model.fit(X_train, y_train)
-model_pkl = open(os.path.join('models','randomforest100_classifier.pkl'), 'wb')
-pickle.dump(model, model_pkl)
-model = pickle.load(open(os.path.join('models','randomforest100_classifier.pkl'), 'rb'))
+# model_pkl = open(os.path.join('models','randomforest100_classifier.pkl'), 'wb')
+# pickle.dump(model, model_pkl)
+# model = pickle.load(open(os.path.join('models','randomforest100_classifier.pkl'), 'rb'))
+with open(os.path.join('models','randomforest100_classifier.pkl'), 'wb') as f:
+       pickle.dump(model, f)
+
+with open(os.path.join('models','randomforest100_classifier.pkl'), 'rb') as f:
+       model = pickle.load(f)
+
 predictions_train = model.predict(X_train)
 print("Accuracy Train {0:.2f}%".format(100*accuracy_score(predictions_train, y_train)))
 print(classification_report(y_train, predictions_train))
@@ -188,9 +229,15 @@ print(classification_report(y_test, predictions))
 print('\t############Random Forest: max_depth = 5\t############')
 model = RandomForestClassifier(n_estimators=20,max_depth=5,random_state=0)
 model.fit(X_train, y_train)
-model_pkl = open(os.path.join('models','randomforest5_classifier.pkl'), 'wb')
-pickle.dump(model, model_pkl)
-model = pickle.load(open(os.path.join('models','randomforest5_classifier.pkl'), 'rb'))
+# model_pkl = open(os.path.join('models','randomforest5_classifier.pkl'), 'wb')
+# pickle.dump(model, model_pkl)
+# model = pickle.load(open(os.path.join('models','randomforest5_classifier.pkl'), 'rb'))
+with open(os.path.join('models','randomforest5_classifier.pkl'), 'wb') as f:
+       pickle.dump(model, f)
+
+with open(os.path.join('models','randomforest5_classifier.pkl'), 'rb') as f:
+       model = pickle.load(f)
+
 predictions_train = model.predict(X_train)
 print("Accuracy Train {0:.2f}%".format(100*accuracy_score(predictions_train, y_train)))
 print(classification_report(y_train, predictions_train))
@@ -205,9 +252,15 @@ print(classification_report(y_test, predictions))
 print('\t############KNN: n_neighbors = 4\t############')
 model = KNeighborsClassifier(n_neighbors=4)
 model.fit(X_train, y_train)
-model_pkl = open(os.path.join('models','knn4_classifier.pkl'), 'wb')
-pickle.dump(model, model_pkl)
-model = pickle.load(open(os.path.join('models','knn4_classifier.pkl'), 'rb'))
+# model_pkl = open(os.path.join('models','knn4_classifier.pkl'), 'wb')
+# pickle.dump(model, model_pkl)
+# model = pickle.load(open(os.path.join('models','knn4_classifier.pkl'), 'rb'))
+with open(os.path.join('models','knn4_classifier.pkl'), 'wb') as f:
+       pickle.dump(model, f)
+
+with open(os.path.join('models','knn4_classifier.pkl'), 'rb') as f:
+       model = pickle.load(f)
+
 predictions_train = model.predict(X_train)
 print("Accuracy Train {0:.2f}%".format(100*accuracy_score(predictions_train, y_train)))
 print(classification_report(y_train, predictions_train))
@@ -221,9 +274,15 @@ print(classification_report(y_test, predictions))
 print('\t############KNN: n_neighbors = 8\t############')
 model = KNeighborsClassifier(n_neighbors=8)
 model.fit(X_train, y_train)
-model_pkl = open(os.path.join('models','knn8_classifier.pkl'), 'wb')
-pickle.dump(model, model_pkl)
-model = pickle.load(open(os.path.join('models','knn8_classifier.pkl'), 'rb'))
+# model_pkl = open(os.path.join('models','knn8_classifier.pkl'), 'wb')
+# pickle.dump(model, model_pkl)
+# model = pickle.load(open(os.path.join('models','knn8_classifier.pkl'), 'rb'))
+with open(os.path.join('models','knn8_classifier.pkl'), 'wb') as f:
+       pickle.dump(model, f)
+
+with open(os.path.join('models','knn8_classifier.pkl'), 'rb') as f:
+       model = pickle.load(f)
+
 predictions_train = model.predict(X_train)
 print("Accuracy Train {0:.2f}%".format(100*accuracy_score(predictions_train, y_train)))
 print(classification_report(y_train, predictions_train))
@@ -238,9 +297,15 @@ print(classification_report(y_test, predictions))
 print('\t############KNN: n_neighbors = 20\t############')
 model = KNeighborsClassifier(n_neighbors=20)
 model.fit(X_train, y_train)
-model_pkl = open(os.path.join('models','knn20_classifier.pkl'), 'wb')
-pickle.dump(model, model_pkl)
-model = pickle.load(open(os.path.join('models','knn20_classifier.pkl'), 'rb'))
+# model_pkl = open(os.path.join('models','knn20_classifier.pkl'), 'wb')
+# pickle.dump(model, model_pkl)
+# model = pickle.load(open(os.path.join('models','knn20_classifier.pkl'), 'rb'))
+with open(os.path.join('models','knn20_classifier.pkl'), 'wb') as f:
+       pickle.dump(model, f)
+
+with open(os.path.join('models','knn20_classifier.pkl'), 'rb') as f:
+       model = pickle.load(f)
+
 predictions_train = model.predict(X_train)
 print("Accuracy Train {0:.2f}%".format(100*accuracy_score(predictions_train, y_train)))
 print(classification_report(y_train, predictions_train))
@@ -255,9 +320,15 @@ print(classification_report(y_test, predictions))
 print('\t############KNN: weights = distance\t############')
 model = KNeighborsClassifier(weights='distance')
 model.fit(X_train, y_train)
-model_pkl = open(os.path.join('models','knn_distance_classifier.pkl'), 'wb')
-pickle.dump(model, model_pkl)
-model = pickle.load(open(os.path.join('models','knn_distance_classifier.pkl'), 'rb'))
+# model_pkl = open(os.path.join('models','knn_distance_classifier.pkl'), 'wb')
+# pickle.dump(model, model_pkl)
+# model = pickle.load(open(os.path.join('models','knn_distance_classifier.pkl'), 'rb'))
+with open(os.path.join('models','knn_distance_classifier.pkl'), 'wb') as f:
+       pickle.dump(model, f)
+
+with open(os.path.join('models','knn_distance_classifier.pkl'), 'rb') as f:
+       model = pickle.load(f)
+
 predictions_train = model.predict(X_train)
 print("Accuracy Train {0:.2f}%".format(100*accuracy_score(predictions_train, y_train)))
 print(classification_report(y_train, predictions_train))
