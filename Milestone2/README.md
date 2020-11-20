@@ -18,8 +18,6 @@ pip instal NAMEOFLIBRARY
 
 
 
-
-
 eg. pip install ppscore
 
 
