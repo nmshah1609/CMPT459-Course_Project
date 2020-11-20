@@ -27,4 +27,4 @@ pip install pickle-mixin
 
 
 ## Some Things to know:
-Please make sure that there is an empty 'models' directory to save the models outside the 'src' folder
+Please make sure that there is a 'models' directory to save the models outside the 'src' folder
