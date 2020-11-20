@@ -1,7 +1,7 @@
-To run the code, use command 'python src/prog2.py' from current directory
+# To run the code, use command 'python src/prog2.py' from current directory
 
 
-Required packages are:
+## Required packages are:
 os, 
 pandas, 
 numpy, 
@@ -10,3 +10,10 @@ pickel,
 ppscore, 
 sklearn, 
 xgboost
+
+## To install any libraries:
+pip instal NAMEOFLIBRARY\n
+eg. pip install ppscore
+
+
+
