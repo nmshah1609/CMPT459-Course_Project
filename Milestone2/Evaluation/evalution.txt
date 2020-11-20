@@ -1,0 +1,353 @@
+
+0,1,2,3 are the classes of the target('outcome').
+
+	############XGBoost: n_estimators=10	############
+Accuracy Train 78.24%
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      4102
+           1       0.67      1.00      0.80    157578
+           2       1.00      1.00      1.00    128261
+           3       0.75      0.00      0.00     75469
+
+    accuracy                           0.78    365410
+   macro avg       0.60      0.50      0.45    365410
+weighted avg       0.79      0.78      0.70    365410
+
+Accuracy Test 78.27%
+[[    0   991    21     0]
+ [    0 39606     0     0]
+ [    0     2 31853    16]
+ [    0 18715   107    42]]
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      1012
+           1       0.67      1.00      0.80     39606
+           2       1.00      1.00      1.00     31871
+           3       0.72      0.00      0.00     18864
+
+    accuracy                           0.78     91353
+   macro avg       0.60      0.50      0.45     91353
+weighted avg       0.79      0.78      0.70     91353
+
+	############XGBoost: n_estimators=20	############
+Accuracy Train 78.24%
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      4102
+           1       0.67      1.00      0.80    157578
+           2       1.00      1.00      1.00    128261
+           3       0.75      0.00      0.00     75469
+
+    accuracy                           0.78    365410
+   macro avg       0.60      0.50      0.45    365410
+weighted avg       0.79      0.78      0.70    365410
+
+Accuracy Test 78.27%
+[[    0   991    21     0]
+ [    0 39606     0     0]
+ [    0     2 31853    16]
+ [    0 18715   107    42]]
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      1012
+           1       0.67      1.00      0.80     39606
+           2       1.00      1.00      1.00     31871
+           3       0.72      0.00      0.00     18864
+
+    accuracy                           0.78     91353
+   macro avg       0.60      0.50      0.45     91353
+weighted avg       0.79      0.78      0.70     91353
+
+	############XGBoost: n_estimators=100	############
+Accuracy Train 78.24%
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      4102
+           1       0.67      1.00      0.80    157578
+           2       1.00      1.00      1.00    128261
+           3       0.75      0.00      0.00     75469
+
+    accuracy                           0.78    365410
+   macro avg       0.60      0.50      0.45    365410
+weighted avg       0.79      0.78      0.70    365410
+
+Accuracy Test 78.27%
+[[    0   991    21     0]
+ [    0 39606     0     0]
+ [    0     2 31853    16]
+ [    0 18715   107    42]]
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      1012
+           1       0.67      1.00      0.80     39606
+           2       1.00      1.00      1.00     31871
+           3       0.72      0.00      0.00     18864
+
+    accuracy                           0.78     91353
+   macro avg       0.60      0.50      0.45     91353
+weighted avg       0.79      0.78      0.70     91353
+
+	############XGBoost: max_depth=5	############
+Accuracy Train 80.10%
+              precision    recall  f1-score   support
+
+           0       0.77      0.03      0.05      4102
+           1       0.69      0.97      0.81    157578
+           2       1.00      1.00      1.00    128261
+           3       0.72      0.15      0.24     75469
+
+    accuracy                           0.80    365410
+   macro avg       0.79      0.54      0.53    365410
+weighted avg       0.81      0.80      0.75    365410
+
+Accuracy Test 80.11%
+[[   31   958    16     7]
+ [   14 38534     0  1058]
+ [    0     1 31842    28]
+ [    0 16022    66  2776]]
+              precision    recall  f1-score   support
+
+           0       0.69      0.03      0.06      1012
+           1       0.69      0.97      0.81     39606
+           2       1.00      1.00      1.00     31871
+           3       0.72      0.15      0.24     18864
+
+    accuracy                           0.80     91353
+   macro avg       0.77      0.54      0.53     91353
+weighted avg       0.80      0.80      0.75     91353
+
+	############Random Forest: n_estimators = 10	############
+Accuracy Train 81.11%
+              precision    recall  f1-score   support
+
+           0       0.85      0.06      0.11      4102
+           1       0.70      0.97      0.82    157578
+           2       1.00      1.00      1.00    128261
+           3       0.78      0.19      0.31     75469
+
+    accuracy                           0.81    365410
+   macro avg       0.83      0.56      0.56    365410
+weighted avg       0.82      0.81      0.77    365410
+
+Accuracy Test 80.91%
+[[   41   935     9    27]
+ [   24 38510     0  1072]
+ [    2     0 31849    20]
+ [    4 15300    45  3515]]
+              precision    recall  f1-score   support
+
+           0       0.58      0.04      0.08      1012
+           1       0.70      0.97      0.82     39606
+           2       1.00      1.00      1.00     31871
+           3       0.76      0.19      0.30     18864
+
+    accuracy                           0.81     91353
+   macro avg       0.76      0.55      0.55     91353
+weighted avg       0.82      0.81      0.76     91353
+
+	############Random Forest: n_estimators = 20	############
+Accuracy Train 81.11%
+              precision    recall  f1-score   support
+
+           0       0.87      0.06      0.11      4102
+           1       0.70      0.97      0.82    157578
+           2       1.00      1.00      1.00    128261
+           3       0.78      0.19      0.31     75469
+
+    accuracy                           0.81    365410
+   macro avg       0.84      0.56      0.56    365410
+weighted avg       0.82      0.81      0.77    365410
+
+Accuracy Test 80.92%
+[[   41   935     9    27]
+ [   22 38499     0  1085]
+ [    2     0 31850    19]
+ [    5 15289    40  3530]]
+              precision    recall  f1-score   support
+
+           0       0.59      0.04      0.08      1012
+           1       0.70      0.97      0.82     39606
+           2       1.00      1.00      1.00     31871
+           3       0.76      0.19      0.30     18864
+
+    accuracy                           0.81     91353
+   macro avg       0.76      0.55      0.55     91353
+weighted avg       0.82      0.81      0.77     91353
+
+	############Random Forest: n_estimators = 100	############
+Accuracy Train 81.12%
+              precision    recall  f1-score   support
+
+           0       0.90      0.06      0.11      4102
+           1       0.70      0.98      0.82    157578
+           2       1.00      1.00      1.00    128261
+           3       0.79      0.19      0.30     75469
+
+    accuracy                           0.81    365410
+   macro avg       0.85      0.56      0.56    365410
+weighted avg       0.83      0.81      0.77    365410
+
+Accuracy Test 80.97%
+[[   40   937     9    26]
+ [   19 38603     0   984]
+ [    2     0 31851    18]
+ [    3 15345    38  3478]]
+              precision    recall  f1-score   support
+
+           0       0.62      0.04      0.07      1012
+           1       0.70      0.97      0.82     39606
+           2       1.00      1.00      1.00     31871
+           3       0.77      0.18      0.30     18864
+
+    accuracy                           0.81     91353
+   macro avg       0.77      0.55      0.55     91353
+weighted avg       0.82      0.81      0.77     91353
+
+	############Random Forest: max_depth = 5	############
+Accuracy Train 78.27%
+
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      4102
+           1       0.67      1.00      0.80    157578
+           2       1.00      1.00      1.00    128261
+           3       0.80      0.00      0.01     75469
+
+    accuracy                           0.78    365410
+   macro avg       0.62      0.50      0.45    365410
+weighted avg       0.80      0.78      0.70    365410
+
+Accuracy Test 78.30%
+[[    0   991    21     0]
+ [    0 39606     0     0]
+ [    0     1 31848    22]
+ [    0 18715    78    71]]
+
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      1012
+           1       0.67      1.00      0.80     39606
+           2       1.00      1.00      1.00     31871
+           3       0.76      0.00      0.01     18864
+
+    accuracy                           0.78     91353
+   macro avg       0.61      0.50      0.45     91353
+weighted avg       0.79      0.78      0.70     91353
+
+	############KNN: n_neighbors = 4	############
+Accuracy Train 78.92%
+              precision    recall  f1-score   support
+
+           0       0.63      0.05      0.09      4102
+           1       0.68      0.96      0.80    157578
+           2       1.00      1.00      1.00    128261
+           3       0.58      0.12      0.19     75469
+
+    accuracy                           0.79    365410
+   macro avg       0.72      0.53      0.52    365410
+weighted avg       0.77      0.79      0.74    365410
+
+Accuracy Test 78.90%
+[[   45   930    10    27]
+ [   28 37959     1  1618]
+ [    7     0 31845    19]
+ [    5 16574    53  2232]]
+              precision    recall  f1-score   support
+
+           0       0.53      0.04      0.08      1012
+           1       0.68      0.96      0.80     39606
+           2       1.00      1.00      1.00     31871
+           3       0.57      0.12      0.20     18864
+
+    accuracy                           0.79     91353
+   macro avg       0.70      0.53      0.52     91353
+weighted avg       0.77      0.79      0.74     91353
+
+	############KNN: n_neighbors = 8	############
+Accuracy Train 80.47%
+              precision    recall  f1-score   support
+
+           0       0.67      0.04      0.07      4102
+           1       0.70      0.95      0.81    157578
+           2       1.00      1.00      1.00    128261
+           3       0.67      0.20      0.31     75469
+
+    accuracy                           0.80    365410
+   macro avg       0.76      0.55      0.55    365410
+weighted avg       0.80      0.80      0.77    365410
+
+Accuracy Test 80.36%
+[[   38   928    13    33]
+ [   21 37684     1  1900]
+ [    0     2 31841    28]
+ [    1 14941    74  3848]]
+              precision    recall  f1-score   support
+
+           0       0.63      0.04      0.07      1012
+           1       0.70      0.95      0.81     39606
+           2       1.00      1.00      1.00     31871
+           3       0.66      0.20      0.31     18864
+
+    accuracy                           0.80     91353
+   macro avg       0.75      0.55      0.55     91353
+weighted avg       0.80      0.80      0.76     91353
+
+	############KNN: n_neighbors = 20	############
+Accuracy Train 80.63%
+              precision    recall  f1-score   support
+
+           0       0.69      0.03      0.06      4102
+           1       0.70      0.95      0.81    157578
+           2       1.00      1.00      1.00    128261
+           3       0.68      0.21      0.32     75469
+
+    accuracy                           0.81    365410
+   macro avg       0.77      0.55      0.55    365410
+weighted avg       0.80      0.81      0.77    365410
+
+Accuracy Test 80.60%
+[[   35   918    14    45]
+ [   20 37760     1  1825]
+ [    0     5 31840    26]
+ [    0 14791    75  3998]]
+              precision    recall  f1-score   support
+
+           0       0.64      0.03      0.07      1012
+           1       0.71      0.95      0.81     39606
+           2       1.00      1.00      1.00     31871
+           3       0.68      0.21      0.32     18864
+
+    accuracy                           0.81     91353
+   macro avg       0.75      0.55      0.55     91353
+weighted avg       0.80      0.81      0.77     91353
+
+	############KNN: weights = distance	############
+Accuracy Train 79.88%
+              precision    recall  f1-score   support
+
+           0       0.80      0.07      0.12      4102
+           1       0.71      0.91      0.80    157578
+           2       1.00      1.00      1.00    128261
+           3       0.58      0.27      0.37     75469
+
+    accuracy                           0.80    365410
+   macro avg       0.77      0.56      0.57    365410
+weighted avg       0.79      0.80      0.77    365410
+
+Accuracy Test 79.78%
+[[   42   898     9    63]
+ [   25 35966     0  3615]
+ [    2     0 31837    32]
+ [    6 13790    36  5032]]
+              precision    recall  f1-score   support
+
+           0       0.56      0.04      0.08      1012
+           1       0.71      0.91      0.80     39606
+           2       1.00      1.00      1.00     31871
+           3       0.58      0.27      0.36     18864
+
+    accuracy                           0.80     91353
+   macro avg       0.71      0.55      0.56     91353
+weighted avg       0.78      0.80      0.77     91353
+
