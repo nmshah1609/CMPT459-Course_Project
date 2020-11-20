@@ -1,4 +1,5 @@
-# To run the code, use command 'python src/prog2.py' from current directory
+# To run the code:
+use command 'python src/prog2.py' from current directory
 
 
 ## Required packages are:
@@ -12,7 +13,13 @@ sklearn,
 xgboost
 
 ## To install any libraries:
-pip instal NAMEOFLIBRARY\n
+pip instal NAMEOFLIBRARY
+
+
+
+
+
+
 eg. pip install ppscore
 
 
