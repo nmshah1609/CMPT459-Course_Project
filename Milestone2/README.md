@@ -21,4 +21,7 @@ pip instal NAMEOFLIBRARY
 eg. pip install ppscore
 
 
+### To install pickle: pip install pickle-mixin
+
+
 
