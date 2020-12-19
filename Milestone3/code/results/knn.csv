@@ -1,0 +1,10 @@
+,KNN - Best Results For Recall On Class 'deceased',,,,,,
+,,Hyperparameters,Accuracy,Precision,f1-score,Overaall Recall,Recall on 'deceased'
+,1,"n_neighbors=3, algorithm='brute', weights='distance'",0.750277361,0.751390112,0.747994017,0.750277361,0.043632144
+,2,"n_neighbors=3, algorithm='brute', weights='uniform'",0.750146002,0.751088408,0.747776548,0.750146002,0.040235158
+,3,"n_neighbors=5, algorithm='brute', weights='distance'",0.791889021,0.771654708,0.764322685,0.791889021,0.039189747
+,KNN - Best Results For Accuracy,,,,,,
+,,Hyperparameters,Accuracy,Precision,f1-score,Overall Recall,Recall on 'deceased'
+,1,"n_neighbors=100, algorithm='auto', weights='distance'",0.807698819,0.809391168,0.765524889,0.807698819,0.030047953
+,2,"n_neighbors=50, algorithm='ball_tree', weights='distance'",0.80708289,0.805502859,0.766422039,0.80708289,0.030831584
+,3,"n_neighbors=50, algorithm='brute', weights='distance'",0.806674213,0.802884442,0.767428326,0.806674213,0.030831584

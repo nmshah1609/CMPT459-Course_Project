@@ -1,0 +1,10 @@
+,XGB - Best Results For Recall On Class 'deceased',,,,,,
+,,Hyperparameters,Accuracy,Precision,f1-score,Overaall Recall,Recall on 'deceased'
+,1,"max_depth=10, min_child_depth=5, n_estimators=200",0.808358531,0.822859913,0.76090395,0.808358531,0.033867235
+,2,"max_depth=10, min_child_depth=0.5, n_estimators=200",0.808507405,0.823142435,0.761109635,0.808507405,0.03386689
+,3,"max_depth=10, min_child_depth=1, n_estimators=20",0.806837685,0.822077947,0.757733512,0.806837685,0.033866545
+,XGB - Best Results For Accuracy,,,,,,
+,,Hyperparameters,Accuracy,Precision,f1-score,Overall Recall,Recall on 'deceased'
+,1,"max_depth=10, min_child_depth=0.5, n_estimators=200",0.808507405,0.823142435,0.761109635,0.808507405,0.03386689
+,2,"max_depth=10, min_child_depth=5, n_estimators=200",0.808358531,0.822859913,0.76090395,0.808358531,0.033867235
+,3,"max_depth=10, min_child_depth=0.5, n_estimators=20",0.806858118,0.82237341,0.757745314,0.806858118,0.033079144
